@@ -1,0 +1,295 @@
+scrollerBar()
+    /*三角箭头的颜色*/
+    scrollbar-arrow-color: #4F94CD;
+    /*滚动条滑块按钮的颜色*/
+    scrollbar-face-color: #4F94CD;
+    /*滚动条整体颜色*/
+    scrollbar-highlight-color: #4F94CD;
+    /*滚动条阴影*/
+    scrollbar-shadow-color: #4F94CD;
+    /*滚动条轨道颜色*/
+    scrollbar-track-color: #ffffff;
+    /*滚动条3d亮色阴影边框的外观颜色——左边和上边的阴影色*/
+    scrollbar-3dlight-color:#EDEDED;
+    /*滚动条3d暗色阴影边框的外观颜色——右边和下边的阴影色*/
+    scrollbar-darkshadow-color: #EDEDED;
+    /*滚动条基准颜色*/
+    scrollbar-base-color: #4F94CD;
+    &::-webkit-scrollbar
+        width: 5px;     
+        height: 8px;
+    &::-webkit-scrollbar-thumb
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: rgba(79,148,205,1);
+    &::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 0px;
+        background: #EDEDED;
+
+
+*{margin: 0; padding: 0;}
+html,body
+    height 100%
+#app
+    height 100%
+// 布局-头部
+#app .my-header
+    display flex
+    justify-content space-between
+    align-items center
+    height 66px
+    line-height 66px
+    padding 0 30px
+    background #001529
+    color #ffffff
+    .img
+        display flex
+        align-items center
+        height 100%
+        img
+            width 120px
+            height auto
+            margin-right 20px
+        span
+            font-size 22px
+    .operate
+        height 100%
+        display flex
+        align-items center
+        .close
+            display flex
+            align-items center
+            cursor pointer
+            line-height initial
+            img
+                width 15px
+                height auto
+                margin-right 6px
+
+// 布局-侧边栏
+#app .my-sider
+    background: #ffffff
+    box-shadow: 0 0 6px rgba(0,0,0,0.2)
+    height 100%
+    overflow: auto
+    z-index: 899
+    scrollerBar()
+#app .ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title
+    padding: 16px 24px
+    font-size 14px
+    color #595959
+    .menu-i
+        display flex
+        align-items center
+        img
+            width 18px
+            height 18px
+            margin-right 16px
+        span
+            margin-top 2px
+
+#app .ivu-menu-vertical.ivu-menu-light:after
+    width 0
+//.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu)
+//    color #fff
+//    background #1890FF
+//.ivu-menu-child-item-active .ivu-menu-submenu-title
+//    color #1890FF
+#app .ivu-menu-light.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:not(.ivu-menu-submenu)
+    color #ffffff
+    background: #1890FF
+    font-weight 700
+#app .ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item
+    padding 13px 0 13px 56px!important
+#app .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu)
+    color #ffffff
+    background #1890FF
+// #app .ivu-menu-vertical .ivu-menu-child-item-active .ivu-menu-submenu-title
+//     color #ffffff
+//     background #1890FF
+// #app .ivu-menu-vertical .ivu-menu-child-item-active .ivu-menu-submenu-title:hover
+//     color #fff
+#app .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after
+    width 0
+// 布局-内容
+#app .ivu-layout-content
+    // margin-left 240px
+    ._content-box
+        height calc(100% - 80px)
+        padding 5px
+        // box-shadow: 0 6px 6px rgba(0,0,0,0.1) inset
+        >.ivu-card
+            height 100%
+            >.ivu-card-body
+                height 100%
+                padding 5px
+                .topContentPane
+                    background #ffffff
+                    overflow auto
+                    scrollerBar()
+                .bottomContentPane
+                    width 100%
+                    height 100%
+                    padding-top 5px
+                    background #ffffff
+    ._content-box2
+        height 100%
+        box-shadow: 0px -2px 6px rgba(0,0,0,0.2) inset;
+        .nav
+            height 54px
+            background-color #ffffff
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2) inset;
+        .ivu-card
+            height calc(100% - 102px)
+            margin 24px
+    
+
+.login
+    .ivu-input-group-prepend
+        background:rgba(255,255,255,0.7)
+        color #9DAECF
+        font-size 20px
+    .ivu-input
+        height 40px
+        border-width 1px 1px 1px 0!important
+        background:rgba(255,255,255,0.7)
+        font-size 14px
+        color #3e3e3e
+        &::-webkit-input-placeholder
+            color: #9DAECF
+            font-size: 14px
+    .ivu-input-icon
+        height 40px
+        line-height 40px
+    .ivu-checkbox-wrapper
+        color #ffffff
+        .ivu-checkbox
+            margin: 0 6px 0 10px;
+        .ivu-checkbox-checked .ivu-checkbox-inner
+            background-color #9DAECF
+            border-color #9DAECF
+
+// 搜索、表格、分页布局wrap
+.search-wrap
+    display flex
+    justify-content space-between
+    padding-bottom 8px
+    border-bottom 1px solid #E8E8E8
+    .ivu-form-item
+        margin-bottom 8px
+    .operate-btn
+        align-self flex-end
+        margin-bottom 8px
+        .ivu-btn
+            margin-left 10px
+
+.holdAssetsTab,.ivu-tabs, .ivu-tabs-card
+    .ivu-tabs-bar
+        margin-bottom 5px
+.smallTable
+    .ivu-table-header 
+        thead 
+            tr 
+                th
+                    height 25px
+    .ivu-table-fixed-header
+        thead 
+            tr 
+                th
+                    height 25px
+    .ivu-table-small
+        td
+            height 25px
+   
+.mediumTable
+    .ivu-table-header 
+        thead 
+            tr 
+                th
+                    height 25px
+    .ivu-table-fixed-header
+        thead 
+            tr 
+                th
+                    height 25px
+    .ivu-table-small
+        td
+            height 30px
+.mediumPage
+    margin 5px 5px 5px 5px
+.ivu-table-tip
+    scrollerBar()
+.ivu-table-body
+    scrollerBar()
+
+// 表格
+.my-table
+    margin-top 20px
+    .tab-btn
+        margin 0 4px
+        color #1890FF
+        cursor pointer
+// 分页
+.my-page
+    margin-top 20px
+    .ivu-page
+        text-align right
+
+[v-cloak]
+    display: none;
+    
+.queryContainer
+    width 100%
+    height 100%
+    display flex
+    padding 0 0 0 2px
+    .tableContainer
+        width calc(100% - 305px)
+        margin-right 5px
+// form表单容器
+.formContainer
+    width 298px
+    height 400px
+    display flex
+    flex-direction column
+    border 1px solid #D3D3D3
+    border-radius 2px
+    padding 5px 5px 5px 18px
+    overflow auto
+    scrollerBar()
+    .ivu-form
+        flex 1
+        .ivu-form-item
+            margin-bottom 1px
+            .ivu-select
+                width 185px
+            .ivu-select-single .ivu-select-selection
+                height 30px
+            .ivu-input
+                height 30px
+                width 185px
+            .inputappend
+                .ivu-input
+                    height 30px
+                    width 156px
+    .operateBtnView
+        width 100%
+        height 38px
+        display flex
+        flex-direction row
+        justify-content space-around
+        align-items center
+        Button 
+            width 70px
+.mediumPlTable
+    .el-table th
+        padding 0 0 0 0 
+    .el-table td
+        padding 5px 0
+.smallPlTable
+    .el-table th
+        padding 0 0 0 0 
+    .el-table td
+        padding 3px 0
+    

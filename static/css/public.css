@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*全局*/
+html, body, div, object, pre, code, h1, h2, h3, h4, h5, h6, p, span, em,
+cite, del, a, img, ul, li, ol, dl, dt, dd, fieldset, legend, form,
+input, button, textarea, header, section, footer, article, nav, aside,
+menu, figure, figcaption{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+*,
+::before,
+::after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+fieldset,img{
+    border: 0;
+}
+input,textarea,select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius:0;
+}
+select::-ms-expand { display: none; }
+body {
+    padding:0;
+    margin:0;
+    color:#666666;
+    background:#FFFFFF;
+    font-size: 14px;
+    font-family:"Microsoft Yahei Arial";
+}
+ul,ol,li {
+    list-style:none;
+}
+img {
+    display: block;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    color:#666;
+    text-decoration:none;
+}
+em,i{
+    font-style: normal;
+}
+a:active,
+a:visited,
+a:link{
+    text-decoration:none;
+}
+.op{
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    -webkit-opacity:0;
+    opacity: 0;
+}
+.center{
+    text-align: center;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+

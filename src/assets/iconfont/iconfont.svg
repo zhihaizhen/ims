@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="icon-test" unicode="&#58941;" d="M128 0h768v64H128zM256 192v146.752l224 224L626.752 416l-224-224H256zM608 690.752L754.752 544 672 461.248 525.248 608 608 690.752z m214.624-169.408l0.032 0.032a32 32 0 0 1 0 45.248l-0.032 0.032-191.968 191.968-0.032 0.032a32 32 0 0 1-45.248 0l-0.032-0.032L192 365.248V128h237.248l393.376 393.344z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="icon-test1" unicode="&#58965;" d="M512 0C299.936 0 128 171.936 128 384S299.936 768 512 768s384-171.936 384-384-171.936-384-384-384m0 832C264.96 832 64 631.04 64 384s200.96-448 448-448 448 200.96 448 448S759.04 832 512 832M511.68 192a48 48 0 1 1 0-96 48 48 0 0 1 0 96M512 640l-0.288-0.032A160.16 160.16 0 0 1 352 480h64a96.096 96.096 0 0 0 95.712 95.968L512 576c52.928 0 96-43.072 96-96s-43.072-96-96-96l-0.288 0.032V384H480v-128h64v67.264A160.224 160.224 0 0 1 672 480c0 88.224-71.776 160-160 160"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="icon-test2" unicode="&#58972;" d="M768 512l-256-256-256 256z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
